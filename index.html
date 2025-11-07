@@ -5,11 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patatas</title>
+    <style>
+        .patata{
+            color: burlywood;
+        }
+        .cebolla{
+            font-size: 1em;
+        }
+        .warning{
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
-    Pagina DE patatas
-    <p>
+    <h2 class="warning">Pagina DE patatas</h2>
+    <p class="patata cebolla ">
 
         **Patata. Patata como aliento. Patata como axioma. Patata como útero, como tumba, como pan y como patria.
         Patata no es palabra: es conjuro. Patata no es alimento: es altar.
@@ -34,6 +45,11 @@
 
         🥔 🥔 🥔
     </p>
+    <script>
+        const caja = document.querySelector("p");
+        caja.classList.add("verde", "italicas");
+        console.log(caja.classList); // DOMTokenList(2) ['azul', 'sombra']
+    </script>
 </body>
 
 </html>
